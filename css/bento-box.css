@@ -1,0 +1,40 @@
+
+/* TO DO MAKE IT RECTANGULAR TO FIT SCREENS AND MODIFY MEDIA */
+.bento-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Locks it to 2 columns permanently */
+  gap: 30px;
+  
+  /* vmin ensures the container never overflows the screen height OR width */
+  width: 60vmin; 
+  max-width: 700px; 
+  
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10; 
+}
+
+.bento-item {
+  background-color: #1e293b;
+  border-radius: 32px;
+  padding: 5vmin; /* Uses vmin for padding so it shrinks with the box */
+  
+  aspect-ratio: 1 / 1; 
+
+}
+
+
+/* Turns the stuff into a column if the screen size gets too small
+@media (max-width: 768px) {
+  .bento-container {
+    grid-template-columns: 1fr;
+  }
+  .bento-item {
+    grid-column: span 1 !important;
+    grid-row: span 1 !important;
+  }
+}
+*/

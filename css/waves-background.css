@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, rgb(145, 223, 61) , rgb(26, 118, 11));
+  height: 100vh;
+}
+
+#waves {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: -1;
+  pointer-events: none;
+}
+
+span {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -65%);
+  color: rgb(0, 0, 0);
+  font-family:  'Source Sans Pro', sans-serif;
+  font-size: 30vw;
+}
